@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inter Arial, Helvetica, sans-serif;
 }
 /* this is for header section */
 
@@ -48,7 +48,118 @@ body {
 .get-early-access-button:hover {
   background-color: #44a36c;
 }
-/* I used the :active pseudo-class selector because I had used it before. */
+
 .get-early-access-button:active {
   background-color: #2fc36d;
+}
+
+/* this is for main hero section */
+.hero-section {
+  width: 100%;
+  height: 674px;
+  background-image: url("assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* I learned this (background-size: cover) from chat gpt that keep full view of banner */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.structured-thinking-container {
+  width: 1360px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.early-access-now-open {
+  height: 35px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: 500;
+  color: #469165;
+  padding: 8px 12px;
+  border-radius: 30px;
+  margin-bottom: 16px;
+}
+.early-access-now-open img {
+  width: 23px;
+  height: 22px;
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+.structured-thinking-container h1 span {
+  font-size: 72px;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+.structured-thinking-container h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #30b868;
+}
+.structured-thinking-container p {
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.hero-section-buttons {
+  display: flex;
+  gap: 16px;
+}
+.start-building-your-vault-button {
+  padding: 16px 16px;
+  background-color: #469165;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.start-building-your-vault-button:hover {
+  background-color: #44a56c;
+}
+/* I used the :active pseudo-class selector because I had used it before. */
+.start-building-your-vault-button:active {
+  background-color: #3db971;
+}
+.see-how-it-works-button {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px 16px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.see-how-it-works-button:hover {
+  background: rgba(137, 136, 136, 0.456);
+}
+/* I used the :active pseudo-class selector because I had used it before. */
+.see-how-it-works-button:active {
+  background: #469165;
+}
+.see-how-it-works-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
 }
